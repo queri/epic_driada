@@ -8,107 +8,121 @@
 </head>
 <body>
 
-  <header>
-    <div class="container-fluid">
+  <header class="main-header">
+    <div class="container">
       <div class="row">
-        <div class="col-xs-4 phone">
-          <span class="phone-text hidden-xs">Закажите бесплатный звонок</span>
+        <div class="col-xs-4 col-sm-5 phone">
+          <a href="#consultation" class="phone-text hidden-xs">Закажите бесплатный звонок!</a>
           <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
         </div>
-        <div class="col-xs-4 logo">
-          <img src="http://placehold.it/85x85" alt="" class="logo-img">
-        </div>
-        <div class="col-xs-4 main-nav">
+        <a href="index.html" class="col-xs-3 col-sm-2 logo">
+          <img src="img/icon-logo.png" alt="" class="logo-img">
+        </a>
+        <div class="col-sm-5 main-nav hidden-xs">
           <nav class="menu">
             <ul>
-              <li class="main-nav-item"><a href="#">О нас</a></li>
-              <li class="main-nav-item"><a href="#">Проекты</a></li>
-              <li class="main-nav-item"><a href="#">Дизайн</a></li>
-              <li class="main-nav-item"><a href="#">Портфолио</a></li>
-              <li class="main-nav-item"><a href="#">Контакты</a></li>
+              <li class="main-nav-item"><a href="#about-title">О нас</a></li>
+              <li class="main-nav-item"><a href="#projects">Проекты</a></li><br>
+              <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+              <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li><br>
+              <li class="main-nav-item"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile-menu visible-xs">
+          <a href="" class="toggler" id="toggler"><span></span></a>
+          <ul class="mobile-nav" id="nav">
+            <li class="main-nav-item"><a href="#about-title">О нас</a></li>
+            <li class="main-nav-item"><a href="#projects">Проекты</a></li>
+            <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+            <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li>
+            <li class="main-nav-item"><a href="#contacts">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="promo-main">
-    <div class="container-fluid">
-      <div class="promo-block">
-        <span class="promo-text promo-text-project">Проектирование</span>
+  <section class="promo-main promo">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3 promo-block promo-block-project">
+          <span class="promo-text">Проектирование</span>
+        </div>
+        <div class="col-xs-6 col-md-3 promo-block promo-block-beauty">
+          <span class="promo-text">Благоустройство</span>
+        </div>
+        <div class="col-xs-6 col-md-3 promo-block promo-block-greenery">
+          <span class="promo-text">Озеленение</span>
+        </div>
+        <div class="col-xs-6 col-md-3 promo-block promo-block-gardering">
+          <span class="promo-text">Уход за садом</span>
+        </div>
+        <div class="logo-title">Driada</div>
       </div>
-      <div class="promo-block">
-        <span class="promo-text promo-text-beauty">Благоустройство</span>
-      </div>
-      <div class="promo-block">
-        <span class="promo-text promo-text-greenery">Озеленение</span>
-      </div>
-      <div class="promo-block">
-        <span class="promo-text promo-text-gardering">Уход за садом</span>
-      </div>
-      <p class="logo-title">Driada</p>
     </div>
   </section>
 
   <section class="about">
     <div class="container-fluid">
-      <h2 class="about-title">Создаем, преображаем, ухаживаем</h2>
+      <h2 class="about-title" id="about-title">Создаем, преображаем, ухаживаем</h2>
       <p class="about-dscr">Мы студия ландшафтного дизайна, основанная в 2007 году в городе Санкт-Петербурге.</p>
       <p class="about-dscr-small">Предоставляем услуги высокого качества по благоустройству, проектированию, озеленению и уходу за вашим садом.</p>
       <div class="row">
-        <div class="col-xs-12 col-md-4 about-block">
-          <a href="#">
-            <img src="http://placehold.it/320x300" alt="" class="about-block-img">
-            <h3 class="about-block-title">Команда профессионалов</h3>
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-4 about-block">
-          <a href="#">
-            <img src="http://placehold.it/320x300" alt="" class="about-block-img">
-            <h3 class="about-block-title">Мы на международных выставках</h3>
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-4 about-block">
-          <a href="#">
-            <img src="http://placehold.it/320x300" alt="" class="about-block-img">
-            <h3 class="about-block-title">Отзывы о нас</h3>
-          </a>
-        </div>
+        <a href="#" class="col-xs-12 col-md-4 about-block">
+          <img src="img/img-profy.jpg" alt="" class="about-block-img">
+          <h3 class="about-block-title">Команда профессионалов</h3>
+        </a>
+        <a href="#" class="col-xs-12 col-md-4 about-block">
+          <img src="img/img-exposition.jpg" alt="" class="about-block-img">
+          <h3 class="about-block-title">Мы на международных выставках</h3>
+        </a>
+        <a href="#" class="col-xs-12 col-md-4 about-block">
+          <img src="img/img-review.jpg" alt="" class="about-block-img">
+          <h3 class="about-block-title">Отзывы о нас</h3>
+        </a>
       </div>
     </div>
   </section>
 
-  <div class="projects-preview">
+  <div class="projects-preview" id="projects">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-push-6 projects-preview-dscr">
-          <h2 class="projects-preview-title">Сад с прудом</h2>
-          <p class="projects-preview-text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м2 с зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
+        <div class="garden-project">
+          <div class="col-xs-12 col-sm-6 col-sm-push-6 projects-preview-dscr">
+            <h2 class="projects-preview-title">Сад с прудом</h2>
+            <p class="projects-preview-text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м2 с зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
+            <a href="" class="btn btn-all-project hidden-xs">Все проекты</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-carousel" id='photo'>
+            <div class="owl-carousel" id="carousel-first">
+              <div><img src="img/img-project-review-1.jpg" alt=""></div>
+              <div><img src="img/img-project-review-2.jpg" alt=""></div>
+            </div>
+            <span class="carousel-prev"></span>
+            <span class="carousel-next"></span>
+          </div>
+          <a href="portfolio.html" class="btn btn-all-project visible-xs-inline-block">Все проекты</a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-sm-pull-6 projects-preview-img">
-          <img src="http://placehold.it/320x300" alt="" class="projects-preview-img">
-        </div>
-        <div class="col-xs-12 col-sm-6 col-sm-offset-6 btn-block">
-          <a href="" class="btn btn-project">Все проекты</a>
-        </div>
-        <div class="col-xs-12 col-sm-6 projects-preview-dscr">
-          <h2 class="projects-preview-title">Готовые решения для вашего сада</h2>
-          <p class="projects-preview-text">Мы предлагаем услугу быстрого озеленения и ландшафтного дизайна с готовыми композиционными решениями из растений, камней, отсыпки, декоративных элементов и газона.</p>
-          <a href="" class="btn btn-project">Все варианты</a>
-        </div>
-        <div class="col-xs-12 col-sm-6 projects-preview-img">
-          <img src="http://placehold.it/320x300" alt="" class="projects-preview-img">
+        <div class="finished-project">
+          <div class="col-xs-12 col-sm-6 projects-preview-dscr">
+            <h2 class="projects-preview-title">Готовые решения для вашего сада</h2>
+            <p class="projects-preview-text">Мы предлагаем услугу быстрого озеленения и ландшафтного дизайна с готовыми композиционными решениями из растений, камней, отсыпки, декоративных элементов и газона.</p>
+            <a href="portfolio.html" class="btn btn-project">Все варианты</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 projects-preview-img">
+            <img src="img/img-project-review-2.jpg" alt="" class="preview-img">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="promo-photo hidden-xs">
-    <img src="" alt="" class="promo-photo-img">
+    <img src="img/img-promo-photo.jpg" alt="" class="promo-photo-img">
   </div>
 
-  <div class="consultation">
+  <div class="consultation" id="consultation">
     <div class="container-fluid">
       <p class="consultation-title">Первая консультация и выезд дизайнера бесплатно</p>
       <form action="" class="consultation-form">
@@ -119,41 +133,48 @@
     </div>
   </div>
 
-  <section class="contacts">
+  <section class="contacts" id ="contacts">
     <div class="container-fluid">
       <h2 class="contacts-title">Свяжитесь с нами</h2>
-      <p class="address">194356, г. Санкт-Петербург, ул. Есенина, д, 18, кор. 2, офис 226</p>
-      <span class="phone">телефон: </span>
-      <a href="tel:88127481704">8 (812) 748-17-04</a>
-      <span class="e-mail">e-mail: </span>
-      <a href="mailto:info@driada.ru">info@driada.ru</a>
-      <p class="work-time">Мы рады видеть Вас у нас в офисе! с пн.-пт. с 11-19</p>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 contacts-map">
-          <img src="http://placehold.it/600x400" alt="" class="map">
+        <div class="col-xs-12 col-sm-offset-3 col-sm-6 white-block">
+          <div class="contacts-block">
+            <p class="address">194356,<br> г. Санкт-Петербург,<br> ул. Есенина, д, 18, кор. 2, офис 226</p>
+            <span class="phone">телефон: <a href="tel:88127481704">8 (812) 748-17-04</a></span>
+            <span class="e-mail">e-mail: <a href="mailto:info@driada.ru">info@driada.ru</a></span>
+            <p class="work-time">Мы рады видеть Вас у нас в офисе! с пн.-пт. с 11-19</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 contacts-map" id="map">
         </div>
         <div class="col-sm-6 hidden-xs contacts-photo">
-          <img src="http://placehold.it/600x400" alt="" class="contacts-photo-img">
+          <img src="img/img-contacts.jpg" alt="" class="contacts-photo-img">
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container-fluid">
+  <footer class="main-footer">
+    <div class="container">
       <div class="row">
         <div class="col-sm-6 hidden-xs copyright">
-          <span class="copyright-text">© 2015 – Все права защищены.</span>
+          © 2015 – Все права защищены.
         </div>
         <div class="col-xs-12 col-sm-6 social">
           <span class="social-text hidden-xs">Мы в соцсетях:</span>
-          <a href="facebook.com" class="fb">fb</a>
-          <a href="twitter.com" class="tw">tw</a>
-          <a href="vk.com" class="vk">vk</a>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/" class="icon fb">facebook</a>
+            <a href="https://twitter.com/" class="icon tw">twitter</a>
+            <a href="https://vk.com" class="icon vk">vkontakte</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

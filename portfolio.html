@@ -8,40 +8,49 @@
 </head>
 <body>
 
-  <header>
+  <header class="main-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 phone">
-          <span class="phone-text hidden-xs">Закажите бесплатный звонок</span>
-           <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
+        <div class="col-xs-4 col-sm-5 phone">
+          <a href="index.html#consultation" class="phone-text hidden-xs">Закажите бесплатный звонок!</a>
+          <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
         </div>
-        <a href="#" class="col-xs-4 logo">
-          <img src="http://placehold.it/85x85" alt="" class="logo-img">
+        <a href="index.html" class="col-xs-3 col-sm-2 logo">
+          <img src="img/icon-logo.png" alt="" class="logo-img">
         </a>
-        <div class="col-xs-4 main-nav">
+        <div class="col-sm-5 main-nav hidden-xs">
           <nav class="menu">
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Проекты</a></li>
-              <li><a href="#">Дизайн</a></li>
-              <li><a href="#">Портфолио</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+              <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li><br>
+              <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+              <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li><br>
+              <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile-menu visible-xs">
+          <a href="" class="toggler" id="toggler"><span></span></a>
+          <ul class="mobile-nav" id="nav">
+            <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+            <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li>
+            <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+            <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li>
+            <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="promo-portfolio">
+  <section class="promo-portfolio promo">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 portfolio-title-block">
+        <div class="col-xs-12 col-sm-7 col-md-8 portfolio-title-block promo-title-block">
           <h2 class="promo-title">Портфолио частных участков</h2>
           <h3 class="promo-subtitle">Портфолио общественных территорий</h3>
         </div>
       </div>
-      <p class="logo-title">Driada</p>
     </div>
   </section>
 
@@ -49,47 +58,66 @@
     <div class="container">
       <h2 class="our-projects-title">Наши проекты</h2>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">поселок Сосновка</h4></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">поселок Лосева</h4></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">дачный участок Гатчина</h4></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">усадьба Романовка</h4></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">поселок Малиново</h4></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#"><img src="http://placehold.it/320x260" alt="">
-          <h4 class="our-projects-name">поселок Зеленая Роща</h4></a>
-        </div>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects1.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>поселок Сосновка</h4>
+          </div>
+        </a>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects2.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>поселок Лосево</h4>
+          </div>
+        </a>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects3.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>дачный участок Гатчина</h4>
+          </div>
+        </a>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects4.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>усадьба Романовка</h4>
+          </div>
+        </a>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects5.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>поселок Малиново</h4>
+          </div>
+        </a>
+        <a href="single-project.html" class="col-xs-12 col-sm-6 col-md-4 our-projects-block">
+          <img src="img/img-our-projects6.jpg" alt="">
+          <div class="our-projects-name">
+            <h4>поселок Зеленая Роща</h4>
+          </div>
+        </a>
       </div>
     </div>
   </section>
-  <footer>
+
+  <footer class="main-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 hidden-xs copyright">
-          <span class="copyright-text">© 2015 – Все права защищены.</span>
+          © 2015 – Все права защищены.
         </div>
         <div class="col-xs-12 col-sm-6 social">
           <span class="social-text hidden-xs">Мы в соцсетях:</span>
-          <a href="facebook.com" class="fb">fb</a>
-          <a href="twitter.com" class="tw">tw</a>
-          <a href="vk.com" class="vk">vk</a>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/" class="icon fb">facebook</a>
+            <a href="https://twitter.com/" class="icon tw">twitter</a>
+            <a href="https://vk.com" class="icon vk">vkontakte</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -7,37 +7,48 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+
+  <header class="main-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 phone">
-          <span class="phone-text hidden-xs">Закажите бесплатный звонок</span>
-           <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
+        <div class="col-xs-4 col-sm-5 phone">
+          <a href="#service-consultation" class="phone-text hidden-xs">Закажите бесплатный звонок!</a>
+          <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
         </div>
-        <a href="#" class="col-xs-4 logo">
-          <img src="http://placehold.it/85x85" alt="" class="logo-img">
+        <a href="index.html" class="col-xs-3 col-sm-2 logo">
+          <img src="img/icon-logo.png" alt="" class="logo-img">
         </a>
-        <div class="col-xs-4 main-nav">
+        <div class="col-sm-5 main-nav hidden-xs">
           <nav class="menu">
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Проекты</a></li>
-              <li><a href="#">Дизайн</a></li>
-              <li><a href="#">Портфолио</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+              <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li><br>
+              <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+              <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li><br>
+              <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile-menu visible-xs">
+          <a href="" class="toggler" id="toggler"><span></span></a>
+          <ul class="mobile-nav" id="nav">
+            <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+            <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li>
+            <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+            <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li>
+            <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="promo-service">
-    <div class="container">
+  <section class="promo-service promo">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 col-md-5 service-title-block">
+        <div class="col-sm-6 col-md-5 service-title-block promo-title-block">
           <h2 class="promo-title">Проектирование</h2>
-          <ul>
+          <ul class="promo-subtitle-list">
             <li class="promo-subtitle">Благоустройство</li>
             <li class="promo-subtitle">Озеленение</li>
             <li class="promo-subtitle">Уход за садом</li>
@@ -45,7 +56,7 @@
           </ul>
         </div>
       </div>
-      <p class="logo-title">Driada</p>
+      <div class="logo-title">Driada</div>
     </div>
   </section>
 
@@ -56,15 +67,15 @@
           <p class="service-text">Основной принцип нашей студии – ландшафт не должен существовать как самостоятельно действующее пространство.</p>
           <p class="small-service-text">Придумать будущий сад — так можно назвать  первый этап ландшафтного проектирования. Проектирование нового сада или решения по улучшению уже существующего принимаются после тщательного изучения особенностей места и общения с владельцами. От того, насколько грамотно и четко выполнен проект, напрямую будет зависеть внешний вид вашего участка и уровень его декоративно-архитектурной ценности. </p>
           <h3 class="service-list-title">На начальном этапе работ мы предлагаем</h3>
-          <ul>
+          <ul class="service-list">
             <li class="service-list-item">Консультационный выезд на участок</li>
             <li class="service-list-item">Предпроектные изыскания</li>
             <li class="service-list-item">Эскизное предложение</li>
             <li class="service-list-item">Разработка проектной документации</li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm-6">
-          <img src="" alt="">
+        <div class="col-xs-12 col-sm-6 service-photo">
+          <img src="img/img-service-photo.jpg" alt="">
         </div>
       </div>
     </div>
@@ -72,13 +83,17 @@
 
   <section class="planning">
     <div class="container">
-      <h2 class="planning-title">Закажите проектирование и получите 3D макет</h2>
-      <p class="planning-text"> Наши дизайнеры дадут Вам возможность заглянуть в будущее, и увидеть каким будет Ваш «зеленый» проект.  С помощью трехмерного моделирования мы поможем реализовать самые невероятные творческие идеи. </p>
-      <!--       здесь будет видео -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+          <h2 class="planning-title">Закажите проектирование и получите 3D макет</h2>
+          <p class="planning-text"> Наши дизайнеры дадут Вам возможность заглянуть в будущее, и увидеть каким будет Ваш «зеленый» проект.  С помощью трехмерного моделирования мы поможем реализовать самые невероятные творческие идеи. </p>
+          <iframe src="https://www.youtube.com/embed/a7yOmmRrT3c" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="consultation">
+  <div class="consultation service-consultation" id="service-consultation">
     <div class="container">
       <form action="" class="consultation-form">
         <p class="consultation-text">Напишите нам и мы вам перезвоним</p>
@@ -88,21 +103,26 @@
     </div>
   </div>
 
-  <footer>
+  <footer class="main-footer service-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 hidden-xs copyright">
-          <span class="copyright-text">© 2015 – Все права защищены.</span>
+          © 2015 – Все права защищены.
         </div>
         <div class="col-xs-12 col-sm-6 social">
           <span class="social-text hidden-xs">Мы в соцсетях:</span>
-          <a href="facebook.com" class="fb">fb</a>
-          <a href="twitter.com" class="tw">tw</a>
-          <a href="vk.com" class="vk">vk</a>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/" class="icon fb">facebook</a>
+            <a href="https://twitter.com/" class="icon tw">twitter</a>
+            <a href="https://vk.com" class="icon vk">vkontakte</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

@@ -7,53 +7,64 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+
+  <header class="main-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 phone">
-          <p class="phone-text hidden-xs">Закажите бесплатный звонок!</p>
-           <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
+        <div class="col-xs-4 col-sm-5 phone">
+          <a href="index.html#consultation" class="phone-text hidden-xs">Закажите бесплатный звонок!</a>
+          <a href="tel:88126373934" class="phone-number">8 (812) 637-39-34</a>
         </div>
-        <a href="#" class="col-xs-4 logo">
-          <img src="http://placehold.it/85x85" alt="" class="logo-img">
+        <a href="index.html" class="col-xs-3 col-sm-2 logo">
+          <img src="img/icon-logo.png" alt="" class="logo-img">
         </a>
-        <div class="col-xs-4 main-nav">
+        <div class="col-sm-5 main-nav hidden-xs">
           <nav class="menu">
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Проекты</a></li>
-              <li><a href="#">Дизайн</a></li>
-              <li><a href="#">Портфолио</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+              <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li><br>
+              <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+              <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li><br>
+              <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile-menu visible-xs">
+          <a href="" class="toggler" id="toggler"><span></span></a>
+          <ul class="mobile-nav" id="nav">
+            <li class="main-nav-item"><a href="index.html#about-title">О нас</a></li>
+            <li class="main-nav-item"><a href="index.html#projects">Проекты</a></li>
+            <li class="main-nav-item"><a href="service.html">Дизайн</a></li>
+            <li class="main-nav-item"><a href="portfolio.html">Портфолио</a></li>
+            <li class="main-nav-item"><a href="index.html#contacts">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="promo-project">
+  <section class="promo-project promo">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 project-title-block">
+        <div class="col-xs-12 col-sm-6 col-lg-5 project-title-block promo-title-block">
           <h2 class="promo-title">Ландшафтный сад с прудом</h2>
           <p class="promo-project-text">Основная задача для нашего дизайнера было создание уютного сада для отдыха с небольшим прудом в коттеджном поселке Лосево.</p>
         </div>
       </div>
-      <p class="logo-title">Driada</p>
+      <div class="logo-title">Driada</div>
     </div>
   </section>
 
   <div class="project-dscr">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <p class="project-dscr-text">Хозяева очень хотели создать сад из хвойных растений с применением большого количества как стриженых, так и свободных живых изгородей, а также маленький пруд. Для их создания были использованы ель обыкновенная, туя западная Holmstrup и сосна горная mughus. Для хвойных композиций использовались ель сербская и колючая, туя. В притененных местах высажены рододендроны финской селекции. Вход в дом и небольшая терраса украшется пышными ампельными бегониями, фуксиями и другими неприхотливыми травянистыми многолетниками. Большинство растений в этом саду высаживались очень молодыми, и сад стал приобретать законченный вид лишь на 5</p>
+        <div class="col-xs-12 col-sm-6 project-dscr-text">
+          <p>Хозяева очень хотели создать сад из хвойных растений с применением большого количества как стриженых, так и свободных живых изгородей, а также маленький пруд. Для их создания были использованы ель обыкновенная, туя западная Holmstrup и сосна горная mughus. Для хвойных композиций использовались ель сербская и колючая, туя. В притененных местах высажены рододендроны финской селекции. Вход в дом и небольшая терраса украшется пышными ампельными бегониями, фуксиями и другими неприхотливыми травянистыми многолетниками. Большинство растений в этом саду высаживались очень молодыми, и сад стал приобретать законченный вид лишь на 5</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
           <div class="row">
             <div class="col-xs-6 project-data">
-              <table>
+              <table class="data-table">
                 <tr>
                   <th>Общая площадь</th>
                   <td>12 соток</td>
@@ -78,10 +89,8 @@
               </table>
             </div>
             <div class="col-xs-6 designer">
-              <img src="" alt="">
-              <p>Наталья <br/>
-                дизайнер проекта
-              </p>
+              <img src="img/img-designer-photo.jpg" alt="">
+              <div class="designer-name">Наталья <br/>дизайнер проекта</div>
             </div>
           </div>
         </div>
@@ -91,23 +100,45 @@
 
   <div class="photo-project">
     <div class="container">
-      <!-- здесь будет блок с фото -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 photo-project-item">
+          <img src="img/img-single-project-1.jpg" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-7 photo-project-item">
+          <img src="img/img-single-project-2.jpg" alt="">
+          <div class="row small-photo">
+            <div class="col-xs-12 col-sm-6 photo-project-item">
+              <img src="img/img-single-project-3.jpg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 photo-project-item">
+              <img src="img/img-single-project-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <footer>
+
+  <footer class="main-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 hidden-xs copyright">
-          <span class="copyright-text">© 2015 – Все права защищены.</span>
+          © 2015 – Все права защищены.
         </div>
         <div class="col-xs-12 col-sm-6 social">
           <span class="social-text hidden-xs">Мы в соцсетях:</span>
-          <a href="facebook.com" class="fb">fb</a>
-          <a href="twitter.com" class="tw">tw</a>
-          <a href="vk.com" class="vk">vk</a>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/" class="icon fb">facebook</a>
+            <a href="https://twitter.com/" class="icon tw">twitter</a>
+            <a href="https://vk.com" class="icon vk">vkontakte</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
